@@ -39,7 +39,7 @@ int Man()
 // the dust of the ground, and a
 // host of others likened unto his kind.
 
-    char *Aqualung = new char[1024];
+    const char *Aqualung = new char[1024];
 
     char *host[10];
 
@@ -71,7 +71,7 @@ int Man()
 // lived on within all men: even
 // within Aqualung.
 
-    char *Spirit = "main";
+    const char *Spirit = "main";
 
     Aqualung = "main";
 
@@ -83,9 +83,11 @@ int Man()
 // better start looking.
 
     assert(saw);
+
+    return 0;
 }
 
-main()
+int main()
 {
     Man();
 }
